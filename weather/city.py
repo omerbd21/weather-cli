@@ -1,15 +1,16 @@
 import requests
 import datetime
 import calendar
+import fire
 
 def get_world_id(city):
     url = f"https://www.metaweather.com/api/location/search/?query={city}"
     response = requests.get(url)
     city_stats = response.json()
     if not city_stats:
-        raise ValueError("No such city in the metaweather API.")
+        raise fire.core.FireError("No such city in the metaweather API.")
     elif len(city_stats) > 1:
-        return ValueError("You probably didn't finish the name of the city.")
+        raise fire.core.FireError("You probably didn't finish the name of the city.")
     return city_stats[0]["woeid"]
 
 def get_temperature(world_id):
