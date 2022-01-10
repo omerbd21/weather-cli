@@ -4,5 +4,5 @@ I used the fire framework to create the CLI and the metaweather API to get the d
 ## Installation
 ## Usage
 ## Credits
-Metaweather website: https://www.metaweather.com
+Metaweather website: https://www.metaweather.com  
 Omer Ben David, 2022
