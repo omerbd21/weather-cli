@@ -1,5 +1,5 @@
 import fire
-from weather import get_temperature, get_world_id, get_capital
+from meta-weather-cli import get_temperature, get_world_id, get_capital
 
 def city(city):
   '''
@@ -25,8 +25,11 @@ def country(country):
   temperatures["City"] = capital
   return temperatures
 
-if __name__ == '__main__':
+def main():
   fire.Fire({
       'city': city,
       'country': country
   })
+
+if __name__ == '__main__':
+  main()
