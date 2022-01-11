@@ -21,5 +21,4 @@ def get_temperature(world_id):
     weekday = datetime.date.today().weekday()
     weekdays = list(calendar.day_name)
     days = ["Today", "Tomorrow"]
-    days += weekdays[(weekday + 2) % 6 : (weekday + 5) % 6]
     return dict(zip(days, temperatures))

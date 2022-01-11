@@ -1,6 +1,7 @@
 # Weather-CLI
 This is a Python CLI used to display the temperature in various cities and countries around the world.
 I used the fire framework to create the CLI and the metaweather API to get the data.
+The countryinfo python package was used to get the capitals of the countries.
 ## Usage
 python weather_cli.py COMMAND PARAMETER
 ## Credits

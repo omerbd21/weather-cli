@@ -1,15 +1,11 @@
 [tool.poetry]
 name = "meta-weather-cli"
-version = "0.1.0"
+version = "0.1.9"
 description = "A CLI to check weather in cities around the globe"
 authors = ["Omer Ben David"]
-packages = [
-    { include = "src/meta-weather-cli" },
-    { include = "src/meta-weather-cli/**/*.py" },
-]
 
 [tool.poetry.scripts]
-meta-weather-cli = 'meta_weather_cli:main'
+meta-weather-cli = 'meta_weather_cli:cli'
 
 [tool.poetry.dependencies]
 python = "^3.9"
